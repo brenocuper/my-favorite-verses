@@ -1,0 +1,19 @@
+{
+  "name": "my-favorite-verses",
+  "version": "1.0.0",
+  "description": "My favorite verses is an application for take notes about your favorite verses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/brenocuper/my-favorite-verses.git"
+  },
+  "author": "Breno Cupertino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenocuper/my-favorite-verses/issues"
+  },
+  "homepage": "https://github.com/brenocuper/my-favorite-verses#readme"
+}
