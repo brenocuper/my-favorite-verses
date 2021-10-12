@@ -27,7 +27,7 @@
 }
 
 .new-verse-form__verse-input::placeholder {
-    color: #9f9f9f; 
+    color: #9f9f9f;
 }
 
 .new-verse-form__send-button {
@@ -40,22 +40,45 @@
 
 .verses {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    align-items: flex-start;
     grid-gap: 20px;
     font-size: 1rem;
     color: #9f9f9f;
 }
 
 .verses__verse {
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 15px;
+    position: relative;
+    line-height: 1.4rem;
 }
 
 .verses__quotation-marks {
     font-size: 1.8rem;
 }
 
+.verses__delete-verse {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    z-index: -1;
+    cursor: pointer;
+    transition: all 0.25s;
+    opacity: 0;
+}
+
+.verses__verse:hover .verses__delete-verse {
+    opacity: 1;
+    z-index: 1;
+}
